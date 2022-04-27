@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/01b286d797.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="start">
+            <h1>Rock, Paper, Scissors</h1>
+            <button id="start-game" onclick="startGame()">Start Game</button>
+        </div>
+        <div id="game-area">
+            <h1>Rock, Paper, Scissors</h1>
+                <label class="object" for="rock"><i class="fa-solid fa-hand-back-fist"></i>Rock</label>
+                <input type="radio" id="rock" name="choice" value="rock"></input>
+                <label class="object" for="paper"><i class="fa-solid fa-hand"></i>Paper</label>
+                <input type="radio" id="paper" name="choice" value="paper"></input>
+                <label class="object" for="scissor"><i class="fa-solid fa-hand-scissors"></i>Scissors</label>
+                <input type="radio" id="scissor" name="choice" value="scissor"></input>
+                <button id="submit" onclick="check()">Submit Choice</button>
+        </div>
+        <div class="result" id="outcome">
+            <!-- JS function addResult() will put in h1 tag for result. ex. <h1>You Win!!!</h1> -->
+            <h2>Computer Chose: <span id="comp-choice"></span></h2>
+            <h2>Player Chose: <span id="player-choice"></span></h2>
+            <button onclick="startGame()">Play Again</button>
+        </div>
+        <footer>
+          
+        </footer>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
